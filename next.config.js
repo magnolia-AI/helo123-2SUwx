@@ -21,6 +21,7 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'source.unsplash.com',
+        pathname: '/random/**',
       },
     ],
   },
@@ -64,3 +65,4 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
