@@ -25,7 +25,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      <div className="absolute inset-0 z-[-1] overflow-hidden">
         <video
           autoPlay
           loop
@@ -40,7 +40,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="container mx-auto px-4 text-center z-10"
+        className="container mx-auto px-4 text-center"
       >
         <Image 
           src="https://storage.googleapis.com/magnolia-storage-dev-test-123/images/8JIGth3aUL/image.jpg" 
@@ -73,4 +73,6 @@ const Hero = () => {
 }
 
 export default Hero
+
+
 
