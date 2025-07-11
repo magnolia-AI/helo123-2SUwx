@@ -18,6 +18,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'storage.googleapis.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'source.unsplash.com',
+        pathname: '/random/**',
+      },
     ],
   },
   async headers() {
@@ -60,3 +65,4 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
