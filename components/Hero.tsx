@@ -24,7 +24,18 @@ const Hero = () => {
   }, [])
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-muted relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="https://storage.googleapis.com/magnolia-storage-dev-test-123/videos/UgrkQZH0bq/video.mp4" type="video/mp4" />
+        </video>
+      </div>
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
